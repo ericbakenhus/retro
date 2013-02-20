@@ -20,7 +20,7 @@ global $webcomic;
 		$q = new WP_Query( $webcomic_query_args ); 
 		?>
 		
-		<? if ( $q->have_posts() ) { ?>
+		<?php if ( $q->have_posts() ) { ?>
 		
 			<section class="webcomic-section sixteen columns row">
 				<?php

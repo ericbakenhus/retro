@@ -62,7 +62,7 @@ function retro_after_setup_theme_hook() {
 	register_nav_menu( 'main', 'Main Menu' );
 	
 	// Add support for custom backgrounds
-	add_custom_background();
+	add_theme_support( 'custom-background' );
 	
 	// The default header text color
 	if ( $retro_options['layout'] == 1 ) {
@@ -79,7 +79,10 @@ function retro_after_setup_theme_hook() {
 	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'retro_header_image_width', $retro_options['header_width'] ) );
 	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'retro_header_image_height', $retro_options['header_height'] ) );
 	
-	add_custom_image_header( 'retro_header_style', 'retro_admin_header_style' );
+	add_theme_support( 'custom-header', array(
+		'wp-head-callback' => 'retro_header_style',
+		'admin-head-callback' => 'retro_admin_header_style'
+	) );
 }
 }
 
