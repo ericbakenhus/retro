@@ -1,0 +1,716 @@
+/*
+Theme Name: Retro
+Theme URI: http://interruptedreality.com/themes/retro
+Author: Big Bagel
+Author URI: http://interruptedreality.com
+Description: Description.
+Version: 0.9
+License: GNU General Public License
+License URI: http://wordpress.org/about/gpl/
+Tags: tags
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1.2;
+	font-family: "Courier New", Courier, monospace;
+	word-wrap: break-word;
+}
+
+body.nice-type {
+
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:focus {
+	background: #66b366;
+	color: #000;
+}
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+	.container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+	.column, .columns                           { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+	.row                                        { margin-bottom: 20px; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column                      { width: 40px;  }
+    .container .two.columns                     { width: 100px; }
+    .container .three.columns                   { width: 160px; }
+    .container .four.columns                    { width: 220px; }
+    .container .five.columns                    { width: 280px; }
+    .container .six.columns                     { width: 340px; }
+    .container .seven.columns                   { width: 400px; }
+    .container .eight.columns                   { width: 460px; }
+    .container .nine.columns                    { width: 520px; }
+    .container .ten.columns                     { width: 580px; }
+    .container .eleven.columns                  { width: 640px; }
+    .container .twelve.columns                  { width: 700px; }
+    .container .thirteen.columns                { width: 760px; }
+    .container .fourteen.columns                { width: 820px; }
+    .container .fifteen.columns                 { width: 880px; }
+    .container .sixteen.columns                 { width: 940px; }
+
+    .container .one-third.column                { width: 300px; }
+    .container .two-thirds.column               { width: 620px; }
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 60px;  }
+    .container .offset-by-two                   { padding-left: 120px; }
+    .container .offset-by-three                 { padding-left: 180px; }
+    .container .offset-by-four                  { padding-left: 240px; }
+    .container .offset-by-five                  { padding-left: 300px; }
+    .container .offset-by-six                   { padding-left: 360px; }
+    .container .offset-by-seven                 { padding-left: 420px; }
+    .container .offset-by-eight                 { padding-left: 480px; }
+    .container .offset-by-nine                  { padding-left: 540px; }
+    .container .offset-by-ten                   { padding-left: 600px; }
+    .container .offset-by-eleven                { padding-left: 660px; }
+    .container .offset-by-twelve                { padding-left: 720px; }
+    .container .offset-by-thirteen              { padding-left: 780px; }
+    .container .offset-by-fourteen              { padding-left: 840px; }
+    .container .offset-by-fifteen               { padding-left: 900px; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container                                  { width: 768px; }
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+
+        .container .one.column                      { width: 28px; }
+        .container .two.columns                     { width: 76px; }
+        .container .three.columns                   { width: 124px; }
+        .container .four.columns                    { width: 172px; }
+        .container .five.columns                    { width: 220px; }
+        .container .six.columns                     { width: 268px; }
+        .container .seven.columns                   { width: 316px; }
+        .container .eight.columns                   { width: 364px; }
+        .container .nine.columns                    { width: 412px; }
+        .container .ten.columns                     { width: 460px; }
+        .container .eleven.columns                  { width: 508px; }
+        .container .twelve.columns                  { width: 556px; }
+        .container .thirteen.columns                { width: 604px; }
+        .container .fourteen.columns                { width: 652px; }
+        .container .fifteen.columns                 { width: 700px; }
+        .container .sixteen.columns                 { width: 748px; }
+
+        .container .one-third.column                { width: 236px; }
+        .container .two-thirds.column               { width: 492px; }
+
+        /* Offsets */
+        .container .offset-by-one                   { padding-left: 48px; }
+        .container .offset-by-two                   { padding-left: 96px; }
+        .container .offset-by-three                 { padding-left: 144px; }
+        .container .offset-by-four                  { padding-left: 192px; }
+        .container .offset-by-five                  { padding-left: 240px; }
+        .container .offset-by-six                   { padding-left: 288px; }
+        .container .offset-by-seven                 { padding-left: 336px; }
+        .container .offset-by-eight                 { padding-left: 348px; }
+        .container .offset-by-nine                  { padding-left: 432px; }
+        .container .offset-by-ten                   { padding-left: 480px; }
+        .container .offset-by-eleven                { padding-left: 528px; }
+        .container .offset-by-twelve                { padding-left: 576px; }
+        .container .offset-by-thirteen              { padding-left: 624px; }
+        .container .offset-by-fourteen              { padding-left: 672px; }
+        .container .offset-by-fifteen               { padding-left: 720px; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .columns, .column { margin: 0; }
+
+        .container .one.column,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 300px; }
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .columns, .column { margin: 0; }
+
+        .container .one.column,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 420px; }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+
+
+/**************************
+* =Basic Styling
+**************************/
+
+html { 
+	background: #000; 
+	color: #393;
+	line-height: 1.2em;
+}
+
+a { 
+	color: #66b366;
+	text-decoration: none;
+}
+
+a:hover,
+.webcomic nav a:hover { 
+	color: #000;
+	background: lightgreen;
+}
+
+a img {
+
+}
+
+.webcomic a img {
+	padding: 0;
+}
+
+.webcomic a:hover {
+	background: none;
+}
+
+.gallery a:hover {
+	background: none;
+}
+
+abbr{ 
+	border-bottom: 1px dotted; 
+	cursor: help; 
+}
+
+b,dfn,strong{ 
+	font-weight: bolder; 
+}
+
+blockquote{ 
+	margin: 0 3em; 
+}
+
+address,cite,em,i,var{ 
+	font-style: italic; 
+}
+
+code,kbd,pre,var,samp{ 
+	font-family: menlo, consolas, courier, monospace; 
+}
+
+del{ 
+	text-decoration: line-through; 
+}
+
+ins{ 
+	text-decoration: underline; 
+}
+
+mark{ 
+	text-decoration: overline; 
+}
+
+pre{ 
+	margin: 0 0 1.5em; 
+	white-space: pre-wrap; 
+}
+
+p{ 
+	margin: 1em 0; 
+}
+
+small{ 
+	font-size: smaller; 
+}
+
+sub{ 
+	vertical-align: sub; 
+}
+
+sup{ 
+	vertical-align: super; 
+}
+
+sub,sup{ 
+	font-size: smaller; 
+	line-height: 0; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	line-height: 1em;
+	margin-bottom: .5em;
+}
+
+h1{ 
+	font-size: 200%; 
+}
+
+h2{ 
+	font-size: 150%; 
+}
+
+h3{ 
+	font-size: 125%; 
+}
+
+h4{ 
+	font-size: 100%; 
+}
+
+h5{ 
+	font-size: 85%; 
+}
+
+h6{ 
+	font-size: 75%; 
+}
+
+
+hr{ 
+	clear: both; 
+}
+
+ol li{ 
+	list-style: decimal; 
+}
+
+ul li{ 
+	list-style: decimal; 
+}
+
+menu li{ 
+	list-style: circle; 
+}
+
+ol,ul,menu{ 
+	margin: 0 0 1.5em 3em;
+	list-style: none;
+}
+
+ul ul,ul ol,ol ol,ol ul,dd { 
+	margin: 0 0 0 3em; 
+}
+
+dl,dialog{ 
+	margin: 0 0 1.5em; 
+}
+
+dt{ 
+	font-weight: bolder; 
+}
+
+.assistive-text {
+	display: none;
+}
+
+/**************************
+* =Classes
+**************************/
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin: auto;
+}
+
+.dynamic img {
+	height: auto;
+	max-width: 100%;
+}
+
+img[class*="align"],
+img[class*="wp-image-"],
+.content .gallery .gallery-icon img {
+    margin-left: 6px;
+	margin-right: 6px;
+}
+
+.wp-caption {
+
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.gallery-caption {
+
+}
+
+.sticky {
+
+}
+
+/**************************
+* =Header
+**************************/
+.site-header {
+	margin: 1em 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+	
+	.site-header hgroup {
+		text-align: center;
+	}
+		
+		.site-header hgroup h1 {
+			padding: 0 0 .5em;
+			margin: 0;
+		}
+		
+		.site-header hgroup h2 {
+			margin: 0;
+		}
+		
+/**************************
+* =Main Nav
+**************************/
+.main-nav {
+	/*display: none; /* uncomment to hide the main menu */
+	border: 1px dotted;
+}
+		
+	.main-nav ul {
+		margin: 0;
+	}
+			
+		.main-nav ul li {
+			float: left;
+			list-style: none;
+			position: relative;
+		}
+				
+			.main-nav ul li a {
+				display: block;
+				padding: .25em .75em;
+			}
+				
+			.main-nav ul li:hover > a,
+			.main-nav ul li.current_page_item > a,
+			.main-nav ul li.current_page_ancestor > a,
+			.main-nav ul li.current-menu-item > a,
+			.main-nav ul li.current-menu-ancestor > a {
+				background: lightgreen;
+				color: #000;
+			}
+				
+			.main-nav ul li ul {
+				background: darkgreen;
+				display: none;
+				left: 0;
+				position: absolute;
+				/*top: 2em;*/
+				z-index: 9999;
+			}
+				
+			.main-nav ul li:hover > ul {
+				display: block;
+			}
+				
+				.main-nav ul li ul li {
+					min-width: 10em;
+				}
+				
+				.main-nav ul li ul li a {
+					color: #000;
+				}
+					
+					.main-nav ul li ul li ul {
+						left: 100%;
+						top: 0;
+					}
+
+/**************************
+* =Main
+**************************/
+.main{ 
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+
+.content {
+	overflow: hidden;
+}
+
+/**************************
+* =Webcomic
+*
+* If you don't use the Webcomic plugin, ignore this section.
+**************************/
+
+.webcomic-section {
+	text-align: center;
+}
+
+/**************************
+* =Sidebars
+**************************/
+.sidebar-main {
+	float: right;
+	width: 228px;
+	overflow: hidden;
+	padding: 10px;
+	border: 1px dotted;
+}
+
+.content-nav {
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+}
+
+	.nav-previous {
+		float: left;
+	}
+	
+	.nav-next {
+		float: right;
+	}
+
+/**************************
+* =Articles
+**************************/
+article {
+	padding: 10px 0;
+}
+
+.home article {
+	margin-bottom: 35px;
+}
+
+.home article.webcomic_post {
+	border-bottom: 1px dashed #006400;
+}
+
+	article .entry-title {
+
+	}
+	
+	article .entry-content {
+		padding: 0 10px;
+		border-left: 1px dashed #006400;
+	}
+
+	article .page-link {
+		margin: 1em 0;
+	}
+		
+		article .page-link a {
+			padding: 2px;
+			border: 1px dotted;
+		}
+
+	article .entry-meta {
+		margin: 10px 0;
+		font-size: 12px;
+	}
+	
+		article .entry-meta-below {
+			text-align: right;
+		}
+			
+
+/**************************
+* =Comments
+**************************/
+section #comments {
+	margin: 10px 0;
+}
+
+	div #respond {
+		margin: 10px 0;
+	}
+	
+	.comment {
+		margin: 1em 0;
+		padding: 10px;
+		border: 1px dotted;
+		list-style: none;
+	}
+	
+	.bypostauthor {
+		border: 3px double;
+	}
+
+/**************************
+* =Footer
+**************************/
+.site-footer {
+	border: 1px dotted;
+}
+
+.footer-credits {
+	font-size: 11px;
+	text-align: right;
+}
